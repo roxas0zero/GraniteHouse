@@ -5,14 +5,14 @@
 
 <td style="width:150px;">
     <div class="btn-group" role="group">
-        <a type="button" class="btn btn-primary" href="@Url.Action("Details/"+Model)">
-            Details
+        <a class="btn btn-primary text-white" href="@Url.Action("Details", new { id = Model})">
+            <i class="far fa-list-alt"></i>
         </a>
-        <a type="button" class="btn btn-success" href="@Url.Action("Edit/"+Model)">
-            Edit
+        <a class="btn btn-success text-white" href="@Url.Action("Edit", new { id = Model})">
+            <i class="far fa-edit"></i>
         </a>
-        <a type="button" class="btn btn-danger" href="@Url.Action("Delete/"+Model)">
-            Delete
+        <a class="btn btn-danger text-white" href="@Url.Action("Delete",new { id = Model})">
+            <i class="far fa-trash-alt"></i>
         </a>
     </div>
 </td>
